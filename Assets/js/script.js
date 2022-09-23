@@ -93,7 +93,7 @@ function createCalendarObjects() {
         hourObject.attr("data-timestamp", startTime);
         hourObject.text(time.format("hA"));
 
-        let descObject = $("<input>").addClass("description pad");
+        let descObject = $("<textarea>").addClass("description pad");
         if (time.format("hA")== moment().format("hA")) {
             descObject.addClass("present");
         } else if (time > moment()) {
